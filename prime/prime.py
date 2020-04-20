@@ -14,7 +14,6 @@ def IsPrime(n):
         if n % i == 0 or n % (i + 2) == 0:
             return False
         i = i + 6
-
     return True
 
 with open(file_name) as inputs:
