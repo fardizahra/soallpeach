@@ -5,8 +5,8 @@ file_name = sys.argv[1]
 
 def IsPrime(n):
     if n>= 1 and n <= 3:
-        return False
-    if n > 3 and (n % 2 == 0 or n % 3 == 0):
+        return True
+    if n % 2 == 0 or n % 3 == 0:
         return False
 
     i = 5
