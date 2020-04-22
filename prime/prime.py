@@ -11,7 +11,7 @@ def IsPrime(n):
         return False
 
     i = 5
-    while i * i <= n:
+    while i <= math.sqrt(n)+1:
         if n % i == 0 or n % (i + 2) == 0:
             return False
         i = i + 6
@@ -22,3 +22,4 @@ with open(file_name) as inputs:
         print(1 if IsPrime(int(input_data)) else 0)
 
 #duration = time.time() - start_time
+
